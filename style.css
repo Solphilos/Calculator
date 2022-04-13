@@ -1,7 +1,11 @@
+body {
+    background-image: url("images/parchment.jpg");
+}
+
 
 .mainContainer {
     display: flex;
-    height: 800px;
+    height: 600px;
     justify-content: center;
     align-content: center;
     flex-direction: column;
@@ -17,8 +21,11 @@
     height: 360px;
     width: 360px;
     margin-top: 6px;
-    border: solid grey 2px;
+    border: solid rgb(131, 158, 8) 2px;
+    border-radius: 10px;
     border-style: outset;
+    box-shadow: 10px 10px 10px;
+    background-color: rgb(22, 22, 22);
 
     
    
@@ -26,11 +33,23 @@
 }
 
 .displayContainer {
-    border: solid grey 2px;
+    display: flex;
+    justify-content: center;
+    border: solid rgb(131, 158, 8) 4px;
     border-radius: 10px;
-    border-style: outset;
+    border-style: ridge;
     height: 70px;
     width: 360px;
+    align-self: center;
+    background-color: rgb(22, 22, 22);
+    box-shadow: 10px 10px 10px;
+}
+
+.result {
+    height: 50px;
+    width: 340px;
+    background-color: rgb(74, 75, 90);
+    border-radius: 8px;
     align-self: center;
 }
 
@@ -38,4 +57,18 @@ button {
     width: 75px;
     height: 60px;
     margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(183, 196, 9);
+    border: solid rgb(131, 158, 8) 4px;
+    border-radius: 100px;
+    border-style: outset;
+    box-shadow: rgb(49, 51, 20) 5px 5px 5px;
+    background-color: rgb(22, 22, 22);
 }
+
+button:active {
+   
+      transform: translateY(4px);
+}
+
