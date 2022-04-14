@@ -15,15 +15,56 @@ operate = (operator, a, b) => {
 let displayValue = 0;
 
 
-// populates result container with value taken from "displayValue" variable
-function displayNums(displayValue) {
-   const results = document.querySelector('.result');
+
+
+
+
+let button = document.querySelectorAll('div.buttonContainer button');  // returns nodelist of buttons inside buttonContainer
+   for(let i = 0; i < button.length; i++) {
+   button[i].addEventListener('click', function() {                   // iterates through nodelist returning index position of buttons
+      switch (i) {
+      case 0 : displayValue = 7;                                        // uses index position to assign a value to displayValue
+      break;
+      case 1 : displayValue = 8;
+      break;
+      case 2 : displayValue = 9;
+      break;
+      case 3 : displayValue = '/';
+      break;
+      case 4 : displayValue = 4;
+      break;
+      case 5 : displayValue = 5;
+      break;
+      case 6 : displayValue = 6;
+      break;
+      case 7 : displayValue = 'x';
+      break;
+      case 8 : displayValue = 1;
+      break;
+      case 9 : displayValue = 2;
+      break;
+      case 10 : displayValue = 3;
+      break;
+      case 11 : displayValue = '-';
+      break;
+      case 12 : displayValue = 0;
+      break;
+      case 13 : displayValue = '.';
+      break;
+      case 14 : displayValue = '=';
+      break;
+      case 15 : displayValue = '+';
+      break;
+      case 16 : displayValue = '0';
+      break; 
+   }  ;const results = document.querySelector('.result');   // populates the result container with the value taken from displayValue
    const text = document.createTextNode(displayValue);
    results.appendChild(text);
    
-}
+}); 
+  }  
+  
 
-addListenEvent = () => document./////
 
 
 
