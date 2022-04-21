@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(233, 233, 248);
+    background-image: url("images/parchment.jpg")
 }
 
 
@@ -87,7 +87,7 @@ button {
 
 
 #subtract, #add, #multiply, #equals, #divide {
-    background-color: rgb(134, 45, 45);
+    background-color: rgb(160, 44, 44);
     border: solid rgb(54, 54, 54) 1px;
     color: rgb(255, 255, 255);
     
