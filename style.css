@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/parchment.jpg");
+    background-color: rgb(233, 233, 248);
 }
 
 
@@ -18,42 +18,55 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     align-self: center;
-    height: 360px;
+    height: 440px;
     width: 360px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 6px;
+    padding-left: 6px;
     margin-top: 6px;
-    border: solid rgb(131, 158, 8) 2px;
-    border-radius: 10px;
-    border-style: outset;
-    box-shadow: 10px 10px 10px;
-    background-color: rgb(51, 49, 49);
-
-    
-   
+    border: solid rgb(54, 54, 54) 3px;
+    border-radius: 12px;
+    background-color: rgb(57, 69, 126);
+    box-shadow: rgb(22, 22, 22) 10px 10px 10px 10px;
 
 }
 
 .displayContainer {
     display: flex;
     justify-content: center;
-    border: solid rgb(131, 158, 8) 4px;
-    border-radius: 10px;
-    border-style: ridge;
     height: 70px;
-    width: 360px;
+    width: 350px;
     align-self: center;
-    background-color: rgb(22, 22, 22);
-    box-shadow: 10px 10px 10px;
+    margin-bottom: 30px;
+    
+   
 }
 
+
 .result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 50px;
     width: 340px;
-    color: aliceblue;
-    background-color: rgb(68, 95, 75);
+    color: rgb(8, 8, 8);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(167, 233, 233);
     border-radius: 8px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Orbitron', sans-serif;
     align-self: center;
+    text-align-last: right;
+    box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
+    
+    
+}
+
+h1 {
+    padding-right: 10px;
 }
 
 button {
@@ -62,17 +75,21 @@ button {
     margin: 5px;
     font-size: 25px;
     font-weight: bold;
-    color: rgb(183, 196, 9);
-    border: solid rgb(131, 158, 8) 2px;
-    border-radius: 100px;
-    border-style: outset;
-    box-shadow: rgb(24, 24, 24) 5px 5px 5px;
-    background-color: rgb(22, 22, 22);
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(26, 26, 26);
+    border: solid rgb(29, 29, 29) 2px;
+    box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
+    
+    border-radius: 14px;
+    background-color: rgb(194, 194, 194);
 }
 
+
+
 #subtract, #add, #multiply, #equals, #divide {
-    background-color: rgb(122, 122, 122);
-    color: white;
+    background-color: rgb(134, 45, 45);
+    border: solid rgb(54, 54, 54) 1px;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -81,8 +98,13 @@ button {
     color: rgb(22, 22, 22)
 }
 
+
 button:active {
    
       transform: translateY(4px);
 }
 
+fieldset {
+    border: none;
+    
+}
