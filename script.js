@@ -47,9 +47,16 @@ function pressToString(thisValue) {
 // converts string to an integer, to be pushed to an array
 
 function stringToInt() {
+   if (Number.isInteger(newValue)) {
    newValue = parseInt(displayValue);
+   }
+   else {
+       newValue = parseFloat(displayValue);
    
+   } 
 }
+
+// rounds newValue(number) to fourth decimal place then pushes number to array. 
 
 function pushToArray() {
    if (intArray.length === 0) {
@@ -59,6 +66,7 @@ function pushToArray() {
     displayValue = '';
     newValue = 0;
 }
+
 
 
 
@@ -129,6 +137,7 @@ let button = document.querySelectorAll('div.buttonContainer button');  // return
       case 10 : pressToString('3');
                 stringToInt();
                 popResult(newValue)
+                
       break;
       case 11 : operator = 'subtract';
                 pushToArray();
@@ -137,10 +146,13 @@ let button = document.querySelectorAll('div.buttonContainer button');  // return
                 stringToInt();
                 popResult(newValue)
       break;
-      case 13 :  popResult('.')
+      case 13 :  pressToString('.');
+                 newValue += `.`
+                 popResult(newValue);
+                 
       break;    
-      case 14 : intArray.push(newValue)
-                operate(operator)
+      case 14 : intArray.push(newValue);
+                operate(operator);
                 
       break;
       case 15 : operator = 'add';
