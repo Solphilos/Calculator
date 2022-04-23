@@ -48,11 +48,10 @@ function pressToString(thisValue) {
 
 function stringToInt() {
    if (Number.isInteger(newValue)) {
-   newValue = parseInt(displayValue);
+       newValue = parseInt(displayValue);
    }
    else {
        newValue = parseFloat(displayValue);
-   
    } 
 }
 
@@ -63,14 +62,14 @@ function pushToArray() {
       let rounded = Math.round(newValue * 10000) / 10000;
       intArray.push(rounded);
    }
-    displayValue = '';
-    newValue = 0;
+      displayValue = '';
+      newValue = 0;
 }
 
 
 
 
-// calls one of the above math functions and applies them to a and b
+// calls one of the above math functions and applies them to a and b (index positions 0 and 1 of the array)
 
 operate = (operator) => {   
     
@@ -86,6 +85,9 @@ operate = (operator) => {
    else if (operator === 'divide') {
       divide(intArray[0], intArray[1]);
    }
+   else {
+      popResult(0);
+   }
  }
 
 
@@ -96,71 +98,103 @@ let button = document.querySelectorAll('div.buttonContainer button');  // return
    button[i].addEventListener('click', function() {                   // iterates through nodelist returning index position of buttons ( case 0-16 )
       switch (i) {
 
-      case 0 : pressToString('7');
-               stringToInt();
-               popResult(newValue)
+      case 0 : 
+         pressToString('7');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 1 : pressToString('8');
-               stringToInt();
-               popResult(newValue)
+
+      case 1 :
+         pressToString('8');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 2 : pressToString('9');
-               stringToInt();
-               popResult(newValue)
+
+      case 2 : 
+         pressToString('9');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 3 : operator = 'divide';
-               pushToArray();
+
+      case 3 : 
+         operator = 'divide';
+         pushToArray();
       break;
-      case 4 : pressToString('4');
-               stringToInt();
-               popResult(newValue)
+
+      case 4 : 
+         pressToString('4');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 5 : pressToString('5');
-               stringToInt();
-               popResult(newValue)
+
+      case 5 : 
+         pressToString('5');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 6 : pressToString('6');
-               stringToInt();
-               popResult(newValue)
+
+      case 6 : 
+         pressToString('6');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 7 : operator = 'multiply';
-               pushToArray();
+
+      case 7 : 
+         operator = 'multiply';
+         pushToArray();
       break;
-      case 8 : pressToString('1');
-               stringToInt();
-               popResult(newValue)
+
+      case 8 : 
+         pressToString('1');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 9 : pressToString('2');
-               stringToInt();
-               popResult(newValue)
+
+      case 9 : 
+         pressToString('2');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 10 : pressToString('3');
-                stringToInt();
-                popResult(newValue)
-                
+
+      case 10 : 
+         pressToString('3');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 11 : operator = 'subtract';
-                pushToArray();
+
+      case 11 : 
+         operator = 'subtract';
+         pushToArray();
       break;
-      case 12 : pressToString('0');
-                stringToInt();
-                popResult(newValue)
+
+      case 12 : 
+         pressToString('0');
+         stringToInt();
+         popResult(newValue)
       break;
-      case 13 :  pressToString('.');
-                 newValue += `.`
-                 popResult(newValue);
-                 
+
+      case 13 :  
+         pressToString('.');
+         newValue += `.`
+         popResult(newValue);
       break;    
-      case 14 : intArray.push(newValue);
-                operate(operator);
-                
+
+      case 14 : 
+         intArray.push(newValue);
+         operate(operator);
       break;
-      case 15 : operator = 'add';
-                pushToArray();
+
+      case 15 : 
+         operator = 'add';
+         pushToArray();
       break;
-      case 16 : allClear();
+
+      case 16 : 
+         allClear();
       break;
-      default : popResult(0);
+
+      default : 
+         popResult(0);
 } }); 
  }  
 
