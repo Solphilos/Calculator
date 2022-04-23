@@ -2,6 +2,12 @@ body {
     background-image: url("images/parchment.jpg")
 }
 
+@font-face {
+    font-family: 'digital-7';
+    src: url('fonts/digital-7/digital-7.ttf');
+  }
+
+
 
 .mainContainer {
     display: flex;
@@ -9,8 +15,6 @@ body {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    
-   
 }
 
 .buttonContainer {
@@ -27,9 +31,8 @@ body {
     margin-top: 6px;
     border: solid rgb(54, 54, 54) 3px;
     border-radius: 12px;
-    background-color: rgb(57, 69, 126);
+    background-color: rgb(66, 72, 102);
     box-shadow: rgb(22, 22, 22) 10px 10px 10px 10px;
-
 }
 
 .displayContainer {
@@ -39,8 +42,6 @@ body {
     width: 350px;
     align-self: center;
     margin-bottom: 30px;
-    
-   
 }
 
 
@@ -51,18 +52,15 @@ body {
     height: 50px;
     width: 340px;
     color: rgb(8, 8, 8);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 5px 14px 5px;
     background-color: rgb(167, 233, 233);
     border-radius: 8px;
-    font-size: 30px;
-    font-weight: 300;
-    font-family: 'Orbitron', sans-serif;
+    font-size: 54px;
+    font-weight: 450;
+    font-family: 'digital-7';
     align-self: center;
     text-align-last: right;
     box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
-    
-    
 }
 
 h1 {
@@ -93,18 +91,27 @@ button {
     
 }
 
+#subtract:hover, #add:hover, #multiply:hover, #equals:hover, #divide:hover {
+    background-color: rgb(98, 218, 212)
+}
+
 #allClear {
     background-color: rgb(192, 79, 3);
     color: rgb(22, 22, 22)
 }
 
+#allClear:hover {
+    background-color: rgb(98, 218, 212);
+}
 
 button:active {
-   
-      transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+button:hover {
+    background-color: rgb(98, 218, 212)
 }
 
 fieldset {
     border: none;
-    
 }
