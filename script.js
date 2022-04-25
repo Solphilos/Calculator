@@ -7,6 +7,8 @@ let displayValue = '';
 let newValue = 0;
 
 popResult(0);
+drkMode();
+standardMode();
 
 
 
@@ -50,6 +52,8 @@ function stringToInt() {
    if (Number.isInteger(newValue)) {
        newValue = parseInt(displayValue);
    }
+   // put something here that allows user to create a zero after decimal. example: 2.05, .03, 2.010
+  
    else {
        newValue = parseFloat(displayValue);
    } 
@@ -66,8 +70,43 @@ function pushToArray() {
       newValue = 0;
 }
 
+   function drkMode() {
+         document.querySelector('.dark').addEventListener('click', () => { 
+            document.querySelector('.buttonContainer').classList.add('buttonContainerDarkMode');
+            document.querySelector('.result').classList.add('resultDarkMode');
+           let darkbutton = document.querySelectorAll('div.buttonContainer button');
+           for (let i = 0; i < darkbutton.length; i++) {
+              button[i].classList.add('buttonDarkMode');
+           }
+           document.querySelector('.add').setAttribute('id', 'addDarkMode');
+           document.querySelector('.subtract').setAttribute('id', 'subtractDarkMode');
+           document.querySelector('.multiply').setAttribute('id', 'multiplyDarkMode');
+           document.querySelector('.divide').setAttribute('id', 'divideDarkMode');
+           document.querySelector('.equals').setAttribute('id', 'equalsDarkMode');
+           document.querySelector('.dark').setAttribute('id', 'darkDarkMode');
+           document.querySelector('.standard').setAttribute('id', 'standardDarkMode');
+           document.querySelector('body').style.background = 'black';
+   })
+   }
 
-
+   function standardMode() {
+      document.querySelector('.standard').addEventListener('click', () => { 
+         document.querySelector('.buttonContainer').classList.remove('buttonContainerDarkMode');
+         document.querySelector('.result').classList.remove('resultDarkMode');
+        let darkbutton = document.querySelectorAll('div.buttonContainer button');
+        for (let i = 0; i < darkbutton.length; i++) {
+           button[i].classList.remove('buttonDarkMode');
+        }
+        document.querySelector('.add').removeAttribute('id', 'addDarkMode');
+        document.querySelector('.subtract').removeAttribute('id', 'subtractDarkMode');
+        document.querySelector('.multiply').removeAttribute('id', 'multiplyDarkMode');
+        document.querySelector('.divide').removeAttribute('id', 'divideDarkMode');
+        document.querySelector('.equals').removeAttribute('id', 'equalsDarkMode');
+        document.querySelector('.dark').removeAttribute('id', 'darkDarkMode');
+        document.querySelector('.standard').removeAttribute('id', 'standardDarkMode');
+        document.querySelector('body').style.background = 'rgb(175, 175, 175)';
+})
+   }
 
 // calls one of the above math functions and applies them to a and b (index positions 0 and 1 of the array)
 
@@ -96,7 +135,7 @@ operate = (operator) => {
 let button = document.querySelectorAll('div.buttonContainer button');  // returns nodelist of buttons inside buttonContainer
    for(let i = 0; i < button.length; i++) {
    button[i].addEventListener('click', function() {                   // iterates through nodelist returning index position of buttons ( case 0-16 )
-      switch (i) {
+      switch (i) {                                                   
 
       case 0 : 
          pressToString('7');
@@ -193,13 +232,19 @@ let button = document.querySelectorAll('div.buttonContainer button');  // return
          allClear();
       break;
 
+      case 17 : 
+        
+      break;
+
+      case 18 :
+      break;
+
       default : 
          popResult(0);
 } }); 
  }  
 
 
-  
  
       
 
