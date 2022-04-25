@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/parchment.jpg")
+    background-color: rgb(175, 175, 175);
 }
 
 @font-face {
@@ -31,8 +31,14 @@ body {
     margin-top: 6px;
     border: solid rgb(54, 54, 54) 3px;
     border-radius: 12px;
-    background-color: rgb(66, 72, 102);
+    background-color: rgb(42, 52, 100);
     box-shadow: rgb(22, 22, 22) 10px 10px 10px 10px;
+}
+
+h1 {
+    font-size: 20px;
+    width:fit-content;
+    height: fit-content;
 }
 
 .displayContainer {
@@ -53,10 +59,10 @@ body {
     width: 340px;
     color: rgb(8, 8, 8);
     padding: 5px 5px 14px 5px;
-    background-color: rgb(167, 233, 233);
+    background-color: rgb(146, 207, 182);
     border-radius: 8px;
     font-size: 54px;
-    font-weight: 450;
+    font-weight: 475;
     font-family: 'digital-7';
     align-self: center;
     text-align-last: right;
@@ -84,23 +90,23 @@ button {
 
 
 
-#subtract, #add, #multiply, #equals, #divide {
+.subtract, .add, .multiply, .equals, .divide {
     background-color: rgb(160, 44, 44);
     border: solid rgb(54, 54, 54) 1px;
     color: rgb(255, 255, 255);
     
 }
 
-#subtract:hover, #add:hover, #multiply:hover, #equals:hover, #divide:hover {
+.subtract:hover, .add:hover, .multiply:hover, .equals:hover, .divide:hover {
     background-color: rgb(98, 218, 212)
 }
 
-#allClear {
+.allClear {
     background-color: rgb(192, 79, 3);
     color: rgb(22, 22, 22)
 }
 
-#allClear:hover {
+.allClear:hover {
     background-color: rgb(98, 218, 212);
 }
 
@@ -112,6 +118,109 @@ button:hover {
     background-color: rgb(98, 218, 212)
 }
 
-fieldset {
-    border: none;
+.dark {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(26, 26, 26);
+    border: solid rgb(29, 29, 29) 2px;
+    box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
+    border-radius: 8px;
+    background-color: rgb(194, 194, 194);
 }
+
+.standard {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(26, 26, 26);
+    border: solid rgb(29, 29, 29) 2px;
+    box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
+    border-radius: 8px;
+    background-color: rgb(194, 194, 194);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttonContainerDarkMode {
+    display: flex;
+    border: solid rgb(17, 231, 10) 3px;
+    border-radius: 12px;
+    background-color: rgb(14, 14, 15);
+    box-shadow: none;
+}
+
+
+
+
+.resultDarkMode {
+  
+    color: rgb(17, 231, 10);
+    background-color: rgb(3, 3, 3);
+    border: solid rgb(0, 183, 255) 1px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+
+
+.buttonDarkMode {
+   
+    color: rgb(17, 231, 10);
+    border: solid rgb(17, 231, 10) 2px;
+    box-shadow: none;
+    border-radius: 14px;
+    background-color: rgb(0, 0, 0);
+}
+
+#darkDarkMode, #standardDarkMode {
+    color:rgb(192, 79, 3);
+    border:solid rgb(192, 79, 3) 2px;
+    border-radius: 8px;
+    box-shadow: none;
+
+}
+
+
+
+
+
+
+#subtractDarkMode, #addDarkMode, #multiplyDarkMode, #equalsDarkMode, #divideDarkMode {
+    background-color: black;
+    border: solid rgb(0, 183, 255) 2px;
+    color: rgb(0, 183, 255);
+    box-shadow: none;
+    
+}
+
+#subtract:hover, #add:hover, #multiply:hover, #equals:hover, #divide:hover {
+    background-color: rgb(98, 218, 212)
+}
+
+#allClearDarkMode {
+    background-color: rgb(192, 79, 3);
+    color: rgb(22, 22, 22)
+}
+
+
+
+
+
+
