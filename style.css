@@ -83,7 +83,6 @@ button {
     color: rgb(26, 26, 26);
     border: solid rgb(29, 29, 29) 2px;
     box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
-    
     border-radius: 14px;
     background-color: rgb(194, 194, 194);
 }
@@ -98,7 +97,7 @@ button {
 }
 
 .subtract:hover, .add:hover, .multiply:hover, .equals:hover, .divide:hover {
-    background-color: rgb(98, 218, 212)
+    background-color: rgb(204, 77, 77)
 }
 
 .allClear {
@@ -107,7 +106,7 @@ button {
 }
 
 .allClear:hover {
-    background-color: rgb(98, 218, 212);
+    background-color: rgb(216, 108, 36);
 }
 
 button:active {
@@ -115,7 +114,7 @@ button:active {
 }
 
 button:hover {
-    background-color: rgb(98, 218, 212)
+    background-color: rgb(218, 218, 218);
 }
 
 .dark {
@@ -127,7 +126,7 @@ button:hover {
     font-family: 'Orbitron', sans-serif;
     color: rgb(26, 26, 26);
     border: solid rgb(29, 29, 29) 2px;
-    box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
+    box-shadow: rgb(22, 22, 22) 1px 1px 1px 1px inset;
     border-radius: 8px;
     background-color: rgb(194, 194, 194);
 }
@@ -141,7 +140,7 @@ button:hover {
     font-family: 'Orbitron', sans-serif;
     color: rgb(26, 26, 26);
     border: solid rgb(29, 29, 29) 2px;
-    box-shadow: rgb(22, 22, 22) 1px 1px 2px 2px inset;
+    box-shadow: rgb(22, 22, 22) 1px 1px 1px 1px inset;
     border-radius: 8px;
     background-color: rgb(194, 194, 194);
 }
@@ -162,7 +161,7 @@ button:hover {
 
 .resultDarkMode {
   
-    color: rgb(243, 243, 243);
+    color: rgb(23, 204, 228);
     background-color: rgb(3, 3, 3);
     border: solid rgb(61, 101, 134) 1px;
     border-radius: 8px;
@@ -181,6 +180,11 @@ button:hover {
     
 }
 
+.buttonDarkMode:hover {
+   background-color: rgb(89, 146, 192);
+}
+
+
 #darkDarkMode, #standardDarkMode {
     background-color:rgb(61, 101, 134);
     border:solid rgb(61, 101, 134) 2px;
@@ -193,7 +197,7 @@ button:hover {
 
 
 #darkDarkMode:hover, #standardDarkMode:hover {
-    background-color: rgb(78, 186, 212);
+    background-color: rgb(89, 146, 192);
 }
 
 
@@ -207,7 +211,7 @@ button:hover {
 }
 
 #subtractDarkMode:hover, #addDarkMode:hover, #multiplyDarkMode:hover, #equalsDarkMode:hover, #divideDarkMode:hover {
-    background-color: rgb(78, 186, 212)
+    background-color: rgb(216, 108, 36);
 }
 
 #allClearDarkMode {
@@ -217,7 +221,7 @@ button:hover {
 }
 
 #allClearDarkMode:hover {
-    background-color: rgb(78, 186, 212);
+    background-color: rgb(199, 107, 184);
 }
 
 
